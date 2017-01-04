@@ -1,0 +1,106 @@
+/**
+TODO
+**/
+* {
+    margin:0px;
+    padding:0px;
+}
+body, html, .container{
+    margin:0px;
+    padding:0px;
+    height:100%;
+    width:100%;
+    background:white;
+}
+
+/**
+navigation styles
+**/
+.nxs-nav {
+    display:flex;
+    align-items:center;
+    height:50px;
+    background:#2d393f;
+}
+.nxs-nav a {
+    padding: 0 20px 0 20px;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+}
+.nxs-button {
+    display:flex;
+    flex-grow:1;
+    height:100%;
+    align-items:center;
+}
+.nxs-button span {
+    margin:0 auto;
+    font-size:24px;
+}
+.nxsWeek {
+    display:flex;
+}
+.nxsDay {
+    flex-grow:1;
+    height:50px;
+    width:50px;
+}
+.nxsDay.has-todos {
+    background:rgba(0,0,0,.5);
+}
+#nxsCalendar {
+    width:300px;
+    color:white;
+}
+
+.menu .collapsed {
+    align-self: center;
+}
+.collapsed img {
+    width:28px;
+    margin-top:31px;
+    margin-left:39px;
+}
+.expanded {
+    display:none;
+    position:absolute;
+    width:500px;
+    margin-top:20px;
+    background:#252d31;
+    color:white;
+    z-index:100;
+}
+
+.expanded li {
+    padding:20px;
+}
+.expanded li:hover {
+    background:#2d393f;
+}
+.expanded a {
+    color:white;
+    text-decoration:none;
+}
+.menu {
+    justify-content:center;
+    background:#252d31;
+    height:100%;
+    width:100px;
+    cursor:pointer;
+    z-index:100;
+}
+.fuzzy-search {
+    background:url('../img/fuzzy-search-bg.png') no-repeat 25px center #2d393f;
+    height:100%;
+    width:100%;
+}
+
+.fuzzy-search input {
+    background:none;
+    border:none;
+    height:100%;
+    color:white;
+    font-size:30px;
+    padding:0 0 0 50px;
+}
