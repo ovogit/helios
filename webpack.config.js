@@ -18,11 +18,15 @@ module.exports= {
             exclude:/node_modules/,
             loader:'pug-loader',    
         }, {
-            test: /\.scss$/,
+            test: /(\.scss|\.css)$/,
             exclude:/node_modules/,
             loaders:["style","css","sass"],
         }, {
-            test: /\.png$/,
+            test: /(\.png|\.jpg)$/,
+            exclude:/node_modules/,
+            loaders:["url-loader"],
+        }, {
+            test: /\.otf$/,
             exclude:/node_modules/,
             loaders:["url-loader"],
         }]

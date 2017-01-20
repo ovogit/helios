@@ -1,0 +1,112 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 930px) {
+  #hamburger {
+      position:relative;
+      display:block;
+      top:0;
+      right:20px;
+      margin-left:auto;
+
+  }
+  .collapse-menu {
+      list-style-type:none;
+      position:relative;
+      width:100%;
+  }
+  .collapse-menu li {
+      display:block;
+      width:100%;
+  }
+  .collapse {
+      display:none;
+  } 
+  #navigation input {
+      width:100%;
+      max-width:100%;
+  }
+  #navigation {
+      width:100%;
+  }
+  #wrapper {
+      padding:0px;
+  }
+}
+@media only screen and (max-width : 1300px) {
+   #content {
+      flex-direction:column;
+      width:100%;
+  } 
+  #right .warning {
+      max-width:100%;
+  }
+
+}
+/*[> Smartphones (landscape) ----------- <]*/
+
+@media only screen 
+  and (max-width: 640px) 
+  {
+
+/* CSS GO HERE */ #wrapper {
+      padding:0px;
+  }
+  #content .heading:first-child::after {
+      display:none;
+  }
+  .bulkOrder legend {
+      font-size:1.4em;
+  }
+  .bulkOrder .input-group label{
+      font-size:1em;
+      max-width:180px;
+      min-width: 120px;
+    text-align:right;
+
+  } 
+  .bulkOrder .input-group {
+      width:90%;
+  }
+  .bulkOrder .input-group input{
+      flex-grow:1;
+      width:100%;
+      min-width:0px;
+  } 
+  
+.bulkOrder .input-group button {
+    color:white;
+    background:#78bfc7;
+    text-shadow:2px 2px #098d9c;
+    flex-grow:0.1;
+    min-width:25px;
+    margin:5px;
+    }
+  #content .heading span.glyphicon {
+      margin-right:0px;
+  }
+  #content .heading b {
+      font-size:1.4em;
+  } #sidebar {
+      display:none;
+  }
+  
+  .collapse {
+      display:none;
+  } 
+  #navigation {
+      width:100%;
+  }
+  #left {
+      min-width:100%;
+      max-width:100%;
+  }
+  #main {
+      width:100%;
+  }
+  #navigation input {
+      width:100%;
+  }
+  #hamburger-menu {
+      left:0px;
+  }
+
+}

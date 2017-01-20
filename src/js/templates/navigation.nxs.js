@@ -13,23 +13,44 @@ class Navigation extends React.Component {
     }
     render(){
         return (
-                <nav class="navbar navbar-default">
-                <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/helios">Helios</a>
+                <div id="navigation">
+                    <input type="text" id="fuzzySearch"></input>
+                    <div class="collapse">
+                        <div class="item">
+                            <button>
+                                <span class="glyphicon glyphicon-envelope"></span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button>
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button>
+                                <span class="glyphicon glyphicon-stats"></span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button>
+                                <span class="glyphicon glyphicon-download-alt"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="hamburger">
+                        <button>
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </button>
+                    </div>
+                    <div id="hamburger-menu">
+                        <ul class="collapse-menu">
+                            <li><a href="#">Messages</a></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li><a href="#">Stats</a></li>
+                            <li><a href="#">Download Reports</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="main-nav">
-                <ul class="nav navbar-nav">
-                    <li><Link to={`/`}>Dashboard</Link></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-                </div>
-                </nav>
                 );
 
     }
