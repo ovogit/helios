@@ -1,43 +1,21 @@
 import React from 'react';
+import Input from '../components/input';
 
 
 class Item extends React.Component {
 
     constructor(){
         super();
+        this.inputs = [];
     }
     render(){
+        for (var i = 0, len = this.props.data.length; i < len; i++) {
+            this.inputs.push(<Input label={this.props.data[i].type} id={this.props.data[i].id}/>);
+        }
         return (
                 <div>
-                            <legend>SCONES</legend>
-                            <div class="input-group active">
-                                <label>
-                                    Sweet
-                                </label>
-                                    <input type="number" class="active" />
-                                    <button type="button">
-                                        <span class="glyphicon glyphicon-minus"></span>
-                                    </button>
-
-                                    <button>
-                                        <span class="glyphicon glyphicon-plus"></span>
-                                    </button>
-
-                            </div>
-                            <div class="input-group">
-                                <label>
-                                    Savory
-                                </label>
-                                <input type="number" />
-                                    <button type="button">
-                                        <span class="glyphicon glyphicon-minus"></span>
-                                    </button>
-
-                                    <button>
-                                        <span class="glyphicon glyphicon-plus"></span>
-                                    </button>
-                            </div>
-                
+                <legend> {this.props.legend}</legend>
+                {this.inputs}
                 </div>
                 );
 
