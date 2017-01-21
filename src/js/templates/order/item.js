@@ -8,10 +8,12 @@ class Item extends React.Component {
         super();
         this.inputs = [];
     }
-    render(){
+    componentWillMount(){
         for (var i = 0, len = this.props.data.length; i < len; i++) {
             this.inputs.push(<Input label={this.props.data[i].type} id={this.props.data[i].id}/>);
         }
+    }
+    render(){
         return (
                 <div>
                 <legend> {this.props.legend}</legend>

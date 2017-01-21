@@ -44,10 +44,7 @@ class Navigation extends React.Component {
                     </div>
                     <div id="hamburger-menu">
                         <ul class="collapse-menu">
-                            <li><a href="#">Messages</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Stats</a></li>
-                            <li><a href="#">Download Reports</a></li>
+                            <li><Link to={`/`}>Messages</Link></li>
                         </ul>
                     </div>
                 </div>
